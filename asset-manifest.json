@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Portifolio/static/css/main.1e375b53.css",
+    "main.js": "/Portifolio/static/js/main.67ee58a6.js",
+    "static/js/415.4d6acbeb.chunk.js": "/Portifolio/static/js/415.4d6acbeb.chunk.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Portifolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/empresas_app.png": "/Portifolio/static/media/empresas_app.89b07591aac17e754d40.png",
+    "static/media/league_of_legends_assistant.png": "/Portifolio/static/media/league_of_legends_assistant.1343ffd014b3df3ace77.png",
+    "static/media/allan_furtuoso_resume.pdf": "/Portifolio/static/media/allan_furtuoso_resume.225c587a81c215c1b9e7.pdf",
+    "static/media/crypto_currency_app.png": "/Portifolio/static/media/crypto_currency_app.ef24bafb0933d3be0639.png",
+    "static/media/home-main.svg": "/Portifolio/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
+    "static/media/about.png": "/Portifolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/unique_parking.png": "/Portifolio/static/media/unique_parking.f4903220c1e0729b6f82.png",
+    "static/media/vip_sports.png": "/Portifolio/static/media/vip_sports.f8686bc112ad76ed5372.png",
+    "static/media/home-bg.jpg": "/Portifolio/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/cerveja_certa.png": "/Portifolio/static/media/cerveja_certa.51a3ce07d58be3313313.png",
+    "static/media/avatar.svg": "/Portifolio/static/media/avatar.7f806e40d46fc76fbc3c4a3d71349951.svg",
+    "static/media/pre.svg": "/Portifolio/static/media/pre.4410c5baaa673cc131da.svg",
+    "index.html": "/Portifolio/index.html",
+    "main.1e375b53.css.map": "/Portifolio/static/css/main.1e375b53.css.map",
+    "main.67ee58a6.js.map": "/Portifolio/static/js/main.67ee58a6.js.map",
+    "415.4d6acbeb.chunk.js.map": "/Portifolio/static/js/415.4d6acbeb.chunk.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Portifolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e375b53.css",
+    "static/js/main.67ee58a6.js"
+  ]
+}
