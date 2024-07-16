@@ -19,7 +19,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-             I found myself in programming and trying to do my best to give back half of what this area has already given me.
+             Lines of code make the lives of people around the world easier. Using creativity and logic, to reach the best solutions possible, is my goal as a software engineer!
               <br />
               <br />I am fluent in 
               <i>
@@ -27,7 +27,7 @@ function Home2() {
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              My field of Interest's are building new ;
               <i>
                 <b className="purple">Mobile tecnologies and products </b>
               </i>
