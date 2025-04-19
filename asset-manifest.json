@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.47b872b7.css",
-    "main.js": "/Portfolio/static/js/main.46738bb1.js",
-    "static/js/415.4d6acbeb.chunk.js": "/Portfolio/static/js/415.4d6acbeb.chunk.js",
-    "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/empresas_app.png": "/Portfolio/static/media/empresas_app.89b07591aac17e754d40.png",
+    "main.css": "/Portfolio/static/css/main.c536c965.css",
+    "main.js": "/Portfolio/static/js/main.81dc2690.js",
+    "static/js/415.fb51c11d.chunk.js": "/Portfolio/static/js/415.fb51c11d.chunk.js",
+    "static/js/787.35dd0f9c.chunk.js": "/Portfolio/static/js/787.35dd0f9c.chunk.js",
     "static/media/league_of_legends_assistant.png": "/Portfolio/static/media/league_of_legends_assistant.1343ffd014b3df3ace77.png",
-    "static/media/allan_furtuoso_resume.pdf": "/Portfolio/static/media/allan_furtuoso_resume.225c587a81c215c1b9e7.pdf",
+    "static/media/emps_app.png": "/Portfolio/static/media/emps_app.5c009999455f6d26d8b4.png",
+    "static/media/bradesco_app.png": "/Portfolio/static/media/bradesco_app.232074d0ac0bcd5e4b94.png",
+    "static/media/empresas_app.png": "/Portfolio/static/media/empresas_app.d3ac4d5b8cc34ec26b17.png",
     "static/media/crypto_currency_app.png": "/Portfolio/static/media/crypto_currency_app.ef24bafb0933d3be0639.png",
     "static/media/home-main.svg": "/Portfolio/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
     "static/media/about.png": "/Portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/allan_furtuoso_resume.pdf": "/Portfolio/static/media/allan_furtuoso_resume.a07a7483c8c91978ba44.pdf",
     "static/media/unique_parking.png": "/Portfolio/static/media/unique_parking.f4903220c1e0729b6f82.png",
     "static/media/vip_sports.png": "/Portfolio/static/media/vip_sports.f8686bc112ad76ed5372.png",
     "static/media/home-bg.jpg": "/Portfolio/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
@@ -17,13 +19,13 @@
     "static/media/avatar.svg": "/Portfolio/static/media/avatar.7f806e40d46fc76fbc3c4a3d71349951.svg",
     "static/media/pre.svg": "/Portfolio/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/Portfolio/index.html",
-    "main.47b872b7.css.map": "/Portfolio/static/css/main.47b872b7.css.map",
-    "main.46738bb1.js.map": "/Portfolio/static/js/main.46738bb1.js.map",
-    "415.4d6acbeb.chunk.js.map": "/Portfolio/static/js/415.4d6acbeb.chunk.js.map",
-    "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
+    "main.c536c965.css.map": "/Portfolio/static/css/main.c536c965.css.map",
+    "main.81dc2690.js.map": "/Portfolio/static/js/main.81dc2690.js.map",
+    "415.fb51c11d.chunk.js.map": "/Portfolio/static/js/415.fb51c11d.chunk.js.map",
+    "787.35dd0f9c.chunk.js.map": "/Portfolio/static/js/787.35dd0f9c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.47b872b7.css",
-    "static/js/main.46738bb1.js"
+    "static/css/main.c536c965.css",
+    "static/js/main.81dc2690.js"
   ]
 }
