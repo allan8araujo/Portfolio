@@ -23,7 +23,7 @@ function Home2() {
               <br />
               <br />I am fluent in 
               <i>
-                <b className="purple"> Kotlin, Java and Python. </b>
+                <b className="purple"> Kotlin, Java, Javascript and Python. </b>
               </i>
               <br />
               <br />

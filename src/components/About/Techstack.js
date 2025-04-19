@@ -12,6 +12,7 @@ import {
   SiFirebase,
   SiKotlin,
   SiFlutter,
+  SiReact
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
 import { GrAndroid } from "react-icons/gr";
@@ -22,6 +23,9 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiKotlin />
       </Col>  
+      <Col xs={4} md={2} className="tech-icons">
+        <SiReact />
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiFlutter />
       </Col><Col xs={4} md={2} className="tech-icons">
