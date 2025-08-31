@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.47b872b7.css",
-    "main.js": "/Portfolio/static/js/main.46738bb1.js",
-    "static/js/415.4d6acbeb.chunk.js": "/Portfolio/static/js/415.4d6acbeb.chunk.js",
-    "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/empresas_app.png": "/Portfolio/static/media/empresas_app.89b07591aac17e754d40.png",
-    "static/media/league_of_legends_assistant.png": "/Portfolio/static/media/league_of_legends_assistant.1343ffd014b3df3ace77.png",
-    "static/media/allan_furtuoso_resume.pdf": "/Portfolio/static/media/allan_furtuoso_resume.225c587a81c215c1b9e7.pdf",
-    "static/media/crypto_currency_app.png": "/Portfolio/static/media/crypto_currency_app.ef24bafb0933d3be0639.png",
-    "static/media/home-main.svg": "/Portfolio/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
-    "static/media/about.png": "/Portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
-    "static/media/unique_parking.png": "/Portfolio/static/media/unique_parking.f4903220c1e0729b6f82.png",
-    "static/media/vip_sports.png": "/Portfolio/static/media/vip_sports.f8686bc112ad76ed5372.png",
-    "static/media/home-bg.jpg": "/Portfolio/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
-    "static/media/cerveja_certa.png": "/Portfolio/static/media/cerveja_certa.51a3ce07d58be3313313.png",
-    "static/media/avatar.svg": "/Portfolio/static/media/avatar.7f806e40d46fc76fbc3c4a3d71349951.svg",
-    "static/media/pre.svg": "/Portfolio/static/media/pre.4410c5baaa673cc131da.svg",
+    "main.css": "/Portfolio/static/css/main.f8173135.css",
+    "main.js": "/Portfolio/static/js/main.67050c67.js",
+    "static/js/787.7da95b79.chunk.js": "/Portfolio/static/js/787.7da95b79.chunk.js",
+    "static/media/empresas_1.png": "/Portfolio/static/media/empresas_1.ced4531bb4cd672f621e.png",
+    "static/media/avatar.png": "/Portfolio/static/media/avatar.75e08b4292ae9f3cee4e.png",
+    "static/media/bradesco_1.png": "/Portfolio/static/media/bradesco_1.be1bd063b44b3c914e03.png",
+    "static/media/unique_parking.png": "/Portfolio/static/media/unique_parking.5b8f3f6fadc7db9c0cf4.png",
+    "static/media/vip_sports.png": "/Portfolio/static/media/vip_sports.746ccad430a5fd01ef59.png",
+    "static/media/emps_1.png": "/Portfolio/static/media/emps_1.7ed0cd7c54ff6b44c330.png",
+    "static/media/cerveja_certa.png": "/Portfolio/static/media/cerveja_certa.a32c7b5abc435be3e199.png",
+    "static/media/league_of_legends_assistant.png": "/Portfolio/static/media/league_of_legends_assistant.8ff6b5b01f7075862ab6.png",
+    "static/media/crypto_currency_app.png": "/Portfolio/static/media/crypto_currency_app.9cac0d1339042d7a6e75.png",
+    "static/media/allan_furtuoso_resume.pdf": "/Portfolio/static/media/allan_furtuoso_resume.b505c5ec85343e72e3f5.pdf",
+    "static/media/bradesco_app.png": "/Portfolio/static/media/bradesco_app.87c68e9dd3576454bdec.png",
+    "static/media/empresas_app.png": "/Portfolio/static/media/empresas_app.47edcaaa25e40caa2249.png",
+    "static/media/emps_app.png": "/Portfolio/static/media/emps_app.ea8fd79255c03ee6ff3a.png",
+    "static/media/pre.svg": "/Portfolio/static/media/pre.64cf9c201ea229c16d83.svg",
     "index.html": "/Portfolio/index.html",
-    "main.47b872b7.css.map": "/Portfolio/static/css/main.47b872b7.css.map",
-    "main.46738bb1.js.map": "/Portfolio/static/js/main.46738bb1.js.map",
-    "415.4d6acbeb.chunk.js.map": "/Portfolio/static/js/415.4d6acbeb.chunk.js.map",
-    "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
+    "main.f8173135.css.map": "/Portfolio/static/css/main.f8173135.css.map",
+    "main.67050c67.js.map": "/Portfolio/static/js/main.67050c67.js.map",
+    "787.7da95b79.chunk.js.map": "/Portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.47b872b7.css",
-    "static/js/main.46738bb1.js"
+    "static/css/main.f8173135.css",
+    "static/js/main.67050c67.js"
   ]
 }
