@@ -19,25 +19,34 @@ import { GrAndroid } from "react-icons/gr";
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>      
+    <Row style={{ paddingBottom: "50px" }}>      
       <Col xs={4} md={2} className="tech-icons">
         <SiKotlin />
+                  <p style={{ fontSize: 24 }}>Kotlin</p>
       </Col>  
       <Col xs={4} md={2} className="tech-icons">
         <SiReact />
+        <p style={{ fontSize: 24 }}>React</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiJavascript1 />
+        <p style={{ fontSize: 24 }}>JavaScript</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiFlutter />
-      </Col><Col xs={4} md={2} className="tech-icons">
+        <p style={{ fontSize: 24 }}>Flutter</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <DiJava />
+        <p style={{ fontSize: 24 }}>Java</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
-      </Col><Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>   
+        <p style={{ fontSize: 24 }}>Python</p>
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiFirebase />
+        <p style={{ fontSize: 24 }}>Firebase</p>
       </Col>
     </Row>
   );

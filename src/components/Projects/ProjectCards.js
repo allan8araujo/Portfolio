@@ -1,55 +1,33 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
+import { Card, Button } from "react-bootstrap";
 import { CgWebsite } from "react-icons/cg";
-import { BsGithub } from "react-icons/bs";
-import { IoLogoGooglePlaystore } from "react-icons/io5";
-
 
 function ProjectCards(props) {
   return (
-    <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      <Card.Body>
-      <Card.Title>{props.title}</Card.Title>
-      {!props.isBlog && <Card.Title style={{ color: "#9b59b6"}}> {props.subtitle}  </Card.Title>}
-        <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
-        </Card.Text>
-	{!props.isBlog && props.ghLink && (
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>)}
-        {"\n"}
-        {"\n"}
+    <div className="project-card-view" onClick={() => props.onClick()}>
+      <Card.Img
+        src={props.imgPath}
+        alt="card-img"
+        className="project-card-image"
+      />
 
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
+      <div className="project-card-content">
+        <Card.Body>
+          <Card.Title style={{ color: "black" }}>{props.title}</Card.Title>
+          
+          {!props.isBlog && (
+            <Card.Subtitle className="mb-2 text-muted">
+              {props.subtitle}
+            </Card.Subtitle>
+          )}
 
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        )}
-{!props.isBlog && props.playstoreLink && (
-          <Button
-            variant="primary"
-            href={props.playstoreLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <IoLogoGooglePlaystore  /> &nbsp;
-            {"Playstore"}
-          </Button>
-        )}
-      </Card.Body>
-    </Card>
+          <Card.Text style={{ textAlign: "justify", color: "#000000ff" }}>
+            {props.description}
+          </Card.Text>
+        </Card.Body>
+      </div>
+    </div>
   );
 }
+
 export default ProjectCards;

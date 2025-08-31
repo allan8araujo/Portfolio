@@ -12,22 +12,24 @@ import{FaAws
 
 function Toolstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+    <Row style={{ paddingBottom: "50px" }}>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAndroidstudio />
+        <p style={{ fontSize: 24 }}>Android Studio</p>
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiMacos />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiAndroidstudio />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <SiPostman />
+        <p style={{ fontSize: 24 }}>Postman</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiFigma />
-      </Col>      
-		<Col xs={4} md={2} className="tech-icons">
+        <p style={{ fontSize: 24 }}>Figma</p>
+      </Col>
+      <Col xs={4} md={2 } className="tech-icons">
         <FaAws />
-
       </Col>
 
     </Row>
