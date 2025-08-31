@@ -27,7 +27,7 @@ function NavBar() {
       expand="md"
     >
       <Container>
-<Navbar.Brand as={HashLink} smooth to="/#home" className="d-flex">
+        <Navbar.Brand as={HashLink} smooth to="/#home" className="d-flex">
           <span className="brand-name">Allan<span style={{
             fontWeight: 700,
             fontSize: "1.4rem",
@@ -48,13 +48,13 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link href="/#home">About</Nav.Link>
+              <Nav.Link as={HashLink} smooth to="/#home">About</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/#projects">Work</Nav.Link>
+              <Nav.Link as={HashLink} smooth to="/#projects">Work</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/#contact">Contact</Nav.Link>
+              <Nav.Link as={HashLink} smooth to="/#contact">Contact</Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link href={pdf}>Resume</Nav.Link>
