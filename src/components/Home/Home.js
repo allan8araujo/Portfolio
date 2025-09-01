@@ -7,7 +7,6 @@ import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
 import ProjectCard from "../Projects/ProjectCards";
 import league_of_legends_assistant from "../../Assets/Projects/league_of_legends_assistant.png";
-import cerveja_certa from "../../Assets/Projects/cerveja_certa.png";
 import unique_parking from "../../Assets/Projects/unique_parking.png";
 import empresas from "../../Assets/Projects/empresas_app.png";
 import empresas_1 from "../../Assets/Projects/empresas_1.png";
@@ -79,8 +78,8 @@ function Home() {
                 title="Bradesco Empresas e Negócios"
                 subtitle="Sep 2024 - Present"
                 description="As a key Android Engineer, I developed the secure digital account opening flow, enabling document capture and facial biometrics for over 100k users."
-                toolsUsed={["Android", "Kotlin", "Javascript", "Jetpack Compose", 
-                  "Coroutines","Firebase", "Retrofit", "Webview SDKs"]}
+                toolsUsed={["Android", "Kotlin", "Javascript", "Jetpack Compose",
+                  "Coroutines", "Firebase", "Retrofit", "Webview SDKs"]}
                 onClick={() => {
                   navigate("/project-details", {
                     state: {
@@ -131,7 +130,7 @@ function Home() {
                       imgPath: emps_1,
                       timeline: "2022 - 2024",
                       role: "Android Engineer",
-                      playstoreLink:"https://play.google.com/store/apps/details?id=com.itau.pme.emps&hl=pt_BR",
+                      playstoreLink: "https://play.google.com/store/apps/details?id=com.itau.pme.emps&hl=pt_BR",
                       responsibilities: [
                         "Engineer and deliver critical financial SDKs ('My Receivables' and 'Cash Flow').",
                         "Implement automated tests with Appium and Selenium.",
@@ -195,8 +194,8 @@ function Home() {
                 subtitle="2023"
                 title="Vip Sports"
                 description="A native Android app for managing a sports training club, built with Kotlin and powered by Firebase as a serverless backend."
-                toolsUsed={["Android", "Kotlin", "Jetpack Compose", "Firebase", 
-                  "Coroutines","Room","Retrofit"]}
+                toolsUsed={["Android", "Kotlin", "Jetpack Compose", "Firebase",
+                  "Coroutines", "Room", "Retrofit"]}
                 onClick={() => {
                   navigate("/project-details", {
                     state: {
@@ -267,11 +266,11 @@ function Home() {
               description="A companion app for LoL players providing real-time insights and strategy tips. Built with Kotlin Multiplatform to run seamlessly on Android and iOS."
               ghLink="https://github.com/allan8araujo/league_of_legends_assistant?tab=readme-ov-file"
               toolsUsed={[
-                  "Kotlin Multiplatform (KMP)",
-                  "Compose Multiplatform",
-                  "AI integration",
-                  "Gemini API",
-                  "UI/UX Design",
+                "Kotlin Multiplatform (KMP)",
+                "Compose Multiplatform",
+                "AI integration",
+                "Gemini API",
+                "UI/UX Design",
               ]}
               onClick={() => {
                 navigate("/project-details", {
@@ -301,12 +300,12 @@ function Home() {
               description="A native Android app built with Kotlin to track, filter, and favorite various cryptocurrencies, consuming a public API for real-time data."
               ghLink="https://github.com/allan8araujo/crypto_currency_app?tab=readme-ov-file"
               toolsUsed={[
-                  "Kotlin",
-                  "Android",
-                  "Coroutines",
-                  "Retrofit",
-                  "Room",
-                  "MVVM"
+                "Kotlin",
+                "Android",
+                "Coroutines",
+                "Retrofit",
+                "Room",
+                "MVVM"
               ]}
               onClick={() => {
                 navigate("/project-details", {
