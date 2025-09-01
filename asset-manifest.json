@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.9e4bc134.css",
-    "main.js": "/Portfolio/static/js/main.c286fcc3.js",
+    "main.js": "/Portfolio/static/js/main.b3001c69.js",
     "static/js/787.7da95b79.chunk.js": "/Portfolio/static/js/787.7da95b79.chunk.js",
-    "static/media/empresas_1.png": "/Portfolio/static/media/empresas_1.ced4531bb4cd672f621e.png",
+    "static/media/empresas_1.png": "/Portfolio/static/media/empresas_1.b98f8315451473a80039.png",
     "static/media/avatar.png": "/Portfolio/static/media/avatar.75e08b4292ae9f3cee4e.png",
-    "static/media/bradesco_1.png": "/Portfolio/static/media/bradesco_1.be1bd063b44b3c914e03.png",
+    "static/media/bradesco_1.png": "/Portfolio/static/media/bradesco_1.d562e710865d172a2f7e.png",
     "static/media/unique_parking.png": "/Portfolio/static/media/unique_parking.5b8f3f6fadc7db9c0cf4.png",
     "static/media/vip_sports.png": "/Portfolio/static/media/vip_sports.746ccad430a5fd01ef59.png",
-    "static/media/emps_1.png": "/Portfolio/static/media/emps_1.7ed0cd7c54ff6b44c330.png",
+    "static/media/emps_1.png": "/Portfolio/static/media/emps_1.0a45ddb6340ebef50faf.png",
     "static/media/league_of_legends_assistant.png": "/Portfolio/static/media/league_of_legends_assistant.8ff6b5b01f7075862ab6.png",
     "static/media/crypto_currency_app.png": "/Portfolio/static/media/crypto_currency_app.9cac0d1339042d7a6e75.png",
     "static/media/allan_furtuoso_resume.pdf": "/Portfolio/static/media/allan_furtuoso_resume.b505c5ec85343e72e3f5.pdf",
@@ -18,11 +18,11 @@
     "static/media/pre.svg": "/Portfolio/static/media/pre.64cf9c201ea229c16d83.svg",
     "index.html": "/Portfolio/index.html",
     "main.9e4bc134.css.map": "/Portfolio/static/css/main.9e4bc134.css.map",
-    "main.c286fcc3.js.map": "/Portfolio/static/js/main.c286fcc3.js.map",
+    "main.b3001c69.js.map": "/Portfolio/static/js/main.b3001c69.js.map",
     "787.7da95b79.chunk.js.map": "/Portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9e4bc134.css",
-    "static/js/main.c286fcc3.js"
+    "static/js/main.b3001c69.js"
   ]
 }
