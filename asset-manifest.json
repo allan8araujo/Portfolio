@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.7e513f3d.css",
-    "main.js": "/Portfolio/static/js/main.c7d4bdc5.js",
+    "main.css": "/Portfolio/static/css/main.9e4bc134.css",
+    "main.js": "/Portfolio/static/js/main.c286fcc3.js",
     "static/js/787.7da95b79.chunk.js": "/Portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/empresas_1.png": "/Portfolio/static/media/empresas_1.ced4531bb4cd672f621e.png",
     "static/media/avatar.png": "/Portfolio/static/media/avatar.75e08b4292ae9f3cee4e.png",
@@ -9,21 +9,20 @@
     "static/media/unique_parking.png": "/Portfolio/static/media/unique_parking.5b8f3f6fadc7db9c0cf4.png",
     "static/media/vip_sports.png": "/Portfolio/static/media/vip_sports.746ccad430a5fd01ef59.png",
     "static/media/emps_1.png": "/Portfolio/static/media/emps_1.7ed0cd7c54ff6b44c330.png",
-    "static/media/cerveja_certa.png": "/Portfolio/static/media/cerveja_certa.a32c7b5abc435be3e199.png",
     "static/media/league_of_legends_assistant.png": "/Portfolio/static/media/league_of_legends_assistant.8ff6b5b01f7075862ab6.png",
     "static/media/crypto_currency_app.png": "/Portfolio/static/media/crypto_currency_app.9cac0d1339042d7a6e75.png",
     "static/media/allan_furtuoso_resume.pdf": "/Portfolio/static/media/allan_furtuoso_resume.b505c5ec85343e72e3f5.pdf",
     "static/media/bradesco_app.png": "/Portfolio/static/media/bradesco_app.87c68e9dd3576454bdec.png",
     "static/media/empresas_app.png": "/Portfolio/static/media/empresas_app.47edcaaa25e40caa2249.png",
-    "static/media/emps_app.png": "/Portfolio/static/media/emps_app.ea8fd79255c03ee6ff3a.png",
+    "static/media/emps_app.png": "/Portfolio/static/media/emps_app.bc019e63c5c162cb7006.png",
     "static/media/pre.svg": "/Portfolio/static/media/pre.64cf9c201ea229c16d83.svg",
     "index.html": "/Portfolio/index.html",
-    "main.7e513f3d.css.map": "/Portfolio/static/css/main.7e513f3d.css.map",
-    "main.c7d4bdc5.js.map": "/Portfolio/static/js/main.c7d4bdc5.js.map",
+    "main.9e4bc134.css.map": "/Portfolio/static/css/main.9e4bc134.css.map",
+    "main.c286fcc3.js.map": "/Portfolio/static/js/main.c286fcc3.js.map",
     "787.7da95b79.chunk.js.map": "/Portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e513f3d.css",
-    "static/js/main.c7d4bdc5.js"
+    "static/css/main.9e4bc134.css",
+    "static/js/main.c286fcc3.js"
   ]
 }
