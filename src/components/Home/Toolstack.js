@@ -3,11 +3,13 @@ import { Col, Row } from "react-bootstrap";
 import {
   SiAndroidstudio,
   SiPostman,
+  SiFirebase,
   SiMacos,
-SiFigma ,
+  SiFigma,
 } from "react-icons/si";
 
-import{FaAws
+import {
+  FaAws
 } from "react-icons/fa";
 
 function Toolstack() {
@@ -18,7 +20,12 @@ function Toolstack() {
         <p style={{ fontSize: 24 }}>Android Studio</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
+        <FaAws />
+        <p style={{ fontSize: 24 }}>AWS</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFirebase />
+        <p style={{ fontSize: 24 }}>Firebase</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostman />
@@ -27,9 +34,6 @@ function Toolstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiFigma />
         <p style={{ fontSize: 24 }}>Figma</p>
-      </Col>
-      <Col xs={4} md={2 } className="tech-icons">
-        <FaAws />
       </Col>
 
     </Row>

@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 html {
 
   --image-gradient: linear-gradient(to bottom left,
@@ -72,6 +75,8 @@ button:focus {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
   padding: 1rem 2rem !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Sets the default weight to regular */
   font-size: 1.2rem !important;
 }
 
@@ -129,6 +134,8 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Sets the default weight to regular */
     background-color: #f5f5f5 !important;
   }
 
@@ -263,6 +270,8 @@ button:focus {
 
 .heading {
   font-size: 2.4em !important;
+   font-family: 'Playfair Display', serif;
+   font-weight: 700;
 }
 
 .heading-name {
@@ -271,19 +280,29 @@ button:focus {
 
 .heading-subtitle {
   font-size: 1.7em !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Sets the default weight to regular */
 }
 
 .main-name {
   color: #000000;
+  font-size: '2.5rem';
+  color: '#000000';
+   font-weight: 700;
+   font-family: 'Playfair Display', serif;
 }
 
 .Typewriter__wrapper {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Sets the default weight to regular */
   font-size: 2.2em !important;
   color: #000000 !important;
   font-weight: 600 !important;
 }
 
 .Typewriter__cursor {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Sets the default weight to regular */
   font-size: 2.4em !important;
   color: #0e0e0e !important;
 }
@@ -291,6 +310,8 @@ button:focus {
 @media (max-width: 767px) {
   .Typewriter__wrapper {
     font-size: 1.4em !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Sets the default weight to regular */
     font-weight: 500 !important;
     position: absolute !important;
   }
@@ -322,6 +343,8 @@ button:focus {
 .home-about-body {
   font-size: 1.2em !important;
   text-align: left;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Sets the default weight to regular */
 }
 
 .home-about-social {
@@ -345,6 +368,8 @@ button:focus {
   height: 40px !important;
   text-align: center !important;
   font-size: 1.2em !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Sets the default weight to regular */
   line-height: 2em !important;
   background: rgba(255, 255, 255, 0.972) !important;
   border-radius: 50% !important;
@@ -416,6 +441,8 @@ button:focus {
 
 .footer h3 {
   font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Sets the default weight to regular */
   color: white !important;
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
@@ -448,7 +475,7 @@ button:focus {
 }
 
 /* Main card container */
-.project-card-view {
+.project-card-view {  
   align-items: center;
   position: relative;
   overflow: hidden;
@@ -485,6 +512,11 @@ button:focus {
   padding: 15px;
   margin-left: 15em; /* Default state: no left margin */
 }
+
+/* The text content area */
+.project-card-title {
+  font-family: 'Playfair Display', serif; /* Use the font name here! */
+}
 /* --- Hover Effects --- */
 .project-card-view:hover .project-card-image {
   transform: translateX(0);
@@ -492,7 +524,6 @@ button:focus {
 
 .project-card-view:hover, .project-card-view:focus-within {
   box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.25);
-  transform: scale(1.02);
 }
 
 .blog-card {
@@ -554,7 +585,9 @@ button:focus {
 .project-heading {
   color: rgb(66, 66, 66) !important;
   padding-bottom: 32px;
-  font-size: 2.3em !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Sets the default weight to regular */
+  font-size: 3em !important;
   font-weight: 500 !important;
 }
 
@@ -571,6 +604,8 @@ button:focus {
 }
 
 .tech-icons {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Sets the default weight to regular */
   color: black;
   background-color: white;
   font-size: 4.5em !important;
@@ -657,6 +692,8 @@ button:focus {
 }
 
 .resume .resume-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Sets the default weight to regular */
   font-size: 2em;
   font-weight: 700;
   padding-top: 30px;
@@ -670,6 +707,8 @@ button:focus {
 }
 
 .resume .resume-item .resume-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Sets the default weight to regular */
   line-height: 18px;
   font-size: 0.9em;
   background: #5234795d;
@@ -707,6 +746,8 @@ button:focus {
   padding-top: 10px !important;
   font-size: 1.1em !important;
   font-family: sans-serif !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Sets the default weight to regular */
 }
 
 .like-btn {
@@ -768,21 +809,19 @@ button:focus {
 
 /* Hero Section (Title and Client) */
 .project-header-section {
+  font-family: 'playfair display', serif;
   padding-bottom: 20px; /* Space below the header */
 }
 
-.project-title-large {
-  font-size: 3.5rem; /* Large font size for the title */
-  font-weight: bold;
-  line-height: 1.1;
-  margin-bottom: 0; /* Remove default margin */
-}
-
 .client-info {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Sets the default weight to regular */
   margin-top: 10px; /* Adjust for alignment with title */
 }
 
 .client-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Sets the default weight to regular */
   font-size: 0.75rem; /* Smaller, uppercase for CLIENT label */
   color: #666;
   letter-spacing: 0.1em;
@@ -790,6 +829,8 @@ button:focus {
 }
 
 .client-name {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Sets the default weight to regular */
   font-size: 1rem;
   font-weight: bold;
 }
@@ -828,12 +869,16 @@ button:focus {
 }
 
 .info-value {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Sets the default weight to regular */
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
 }
 
 .info-responsibilities li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Sets the default weight to regular */
   font-size: 1rem;
   margin-bottom: 5px;
   position: relative;
@@ -841,7 +886,9 @@ button:focus {
 }
 
 .info-responsibilities li::before {
-  content: "—"; /* Custom bullet point */
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Sets the default weight to regular */
+  content: "•"; /* Custom bullet point */
   position: absolute;
   left: 0;
   color: #333; /* Color of your bullet */
@@ -849,11 +896,11 @@ button:focus {
 
 /* Main Details Content */
 .project-details-content p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Sets the default weight to regular */
   font-size: 1.1rem;
   line-height: 1.8;
   color: #555;
-  max-width: 800px; /* Limit paragraph width for readability */
-  margin-left: auto;
   margin-right: auto; /* Center the paragraph if max-width is applied */
 }
 

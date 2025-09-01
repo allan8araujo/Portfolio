@@ -1,12 +1,21 @@
 import { useLocation } from "react-router-dom";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap"; // Import Button
 import "../style.css"; // Your custom styles
+import { BsGooglePlay } from "react-icons/bs"; // Import a nice icon
 import React, { useState, useEffect } from "react";
 
 export default function ProjectDetails() {
   const location = useLocation();
-  const { title, details, imgPath, client, role, timeline, responsibilities } =
-    location.state || {};
+  const { 
+    title,
+    details,
+    imgPath, 
+    client, 
+    role, 
+    timeline, 
+    responsibilities, 
+    playstoreLink 
+  } = location.state || {};
 
   // 2. State to store the vertical scroll offset
   const [offsetY, setOffsetY] = useState(0);
@@ -34,7 +43,9 @@ export default function ProjectDetails() {
       <Container className="project-header-section pt-5">
         <Row className="align-items-start">
           <Col md={9}>
-            <h1 className="project-title-large">{title}</h1>
+            <h1 className="project-title-large" style={{
+              fontFamily: 'Playfair Display', fontWeight: 700, fontSize: '6rem'
+            }}>{title}</h1>
           </Col>
           <Col md={3} className="text-md-end client-info">
             {client && (
@@ -87,6 +98,27 @@ export default function ProjectDetails() {
             <p>{details}</p>
           </Col>
         </Row>
+        {playstoreLink && (
+          <Row className="justify-content-center text-center mt-4 mb-5">
+            <Col md={6}>
+              <Button
+                href={playstoreLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="dark"
+                size="lg"
+                style={{
+                  minWidth: "250px",
+                  fontSize: "1.1rem",
+                  padding: "12px 24px",
+                }}
+              >
+                <BsGooglePlay size={22} style={{ marginRight: "12px" }} />
+                View on Google Play
+              </Button>
+            </Col>
+          </Row>
+        )}
       </Container>
     </div>
   );

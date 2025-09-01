@@ -66,7 +66,9 @@ function Home() {
 
       <Container fluid className="project-section" id="projects">
         <Container>
-          <h1 className="project-heading">
+          <h1 className="project-heading" style={{
+            fontFamily: 'Playfair Display', fontWeight: 700
+          }}>
             <strong className="purple">Works </strong>
           </h1>
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
@@ -77,13 +79,15 @@ function Home() {
                 title="Bradesco Empresas e Negócios"
                 subtitle="Sep 2024 - Present"
                 description="As a key Android Engineer, I developed the secure digital account opening flow, enabling document capture and facial biometrics for over 100k users."
-                playstoreLink="https://play.google.com/store/apps/details?id=br.com.bradesco.pdpjapp&hl=pt_BR"
+                toolsUsed={["Android", "Kotlin", "Javascript", "Jetpack Compose", 
+                  "Coroutines","Firebase", "Retrofit", "Webview SDKs"]}
                 onClick={() => {
                   navigate("/project-details", {
                     state: {
                       title: "Bradesco Empresas e Negócios",
-                      details: "Contributed to a high-traffic financial app for a major institution. My primary role was to Implement a secure document capture and facial biometrics flow using Kotlin. This critical feature enabled a fully digital, verified bank account opening process. I also engineered a custom JavaScript interface to bridge web components with native Android features and enhanced application stability by building out a robust suite of automated tests with Robolectric and Espresso.",
+                      details: "Developed and maintained the Bradesco Empresas e Negócios app, a high-traffic mobile banking solution with 100k+ downloads, ensuring stability and usability for business customers. Built document capture and facial biometric flows in Kotlin, enabling users to securely open bank accounts digitally with identity verification. Expanded hybrid app functionality by implementing a custom JavaScript interface that allowed web components to access native Android features such as SharedPreferences and push notifications. Increased application stability by implementing automated tests with Robolectric and Espresso, improving release confidence and reducing bugs in production.",
                       imgPath: bradesco_1,
+                      playstoreLink: "https://play.google.com/store/apps/details?id=br.com.bradesco.pdpjapp&hl=pt_BR",
                       timeline: "Sep 2024 - Present",
                       role: "Android Engineer",
                       responsibilities: [
@@ -104,15 +108,30 @@ function Home() {
                 title="Itaú Emps"
                 subtitle="2022 - 2024"
                 description="Developed critical financial SDKs for the Itaú Emps app, providing key insights on receivables and cash flow to a user base of over 5 million."
-                playstoreLink="https://play.google.com/store/apps/details?id=com.itau.pme.emps&hl=pt_BR"
+                toolsUsed={[
+                  "Kotlin",
+                  "Android",
+                  "MVVM",
+                  "Coroutines",
+                  "CI/CD",
+                  "Jenkins",
+                  "Jetpack Compose",
+                  "Retrofit",
+                  "Reactive programming with BFF",
+                  "Google Analytics", "Koin", "Flow",
+                  "Jetpack Libraries (Flow, LiveData, Viewmodel)",
+                  "Firebase Crashlytics",
+                  "JUnit",
+                ]}
                 onClick={() => {
                   navigate("/project-details", {
                     state: {
                       title: "Itaú Emps",
-                      details: "Working on the high-scale Itaú Emps application serving over 5 million users, my focus was on engineering and delivering critical financial SDKs. I developed the 'My Receivables' and 'Cash Flow' modules to summarize user income and outcomes, directly helping to reduce call center costs. I ensured the reliability of these features by implementing a full suite of automated tests using Appium and Selenium and contributed to a modern codebase using MVVM and Jetpack Compose.",
+                      details: "Working on the high-scale Itaú Emps application serving over 5 million users, my focus was on engineering and delivering critical financial SDKs. I developed the 'Cash Flow' module to summarize user income and outcomes, directly helping to reduce call center costs. I ensured the reliability of these features by implementing a full suite of automated tests using Appium and Selenium and contributed to a modern codebase using MVVM and Jetpack Compose.",
                       imgPath: emps_1,
                       timeline: "2022 - 2024",
                       role: "Android Engineer",
+                      playstoreLink:"https://play.google.com/store/apps/details?id=com.itau.pme.emps&hl=pt_BR",
                       responsibilities: [
                         "Engineer and deliver critical financial SDKs ('My Receivables' and 'Cash Flow').",
                         "Implement automated tests with Appium and Selenium.",
@@ -131,12 +150,29 @@ function Home() {
                 title="Itaú Empresas"
                 subtitle="2022 - 2023"
                 description="Engineered and maintained features for Itaú's main business banking platform, leveraging MVVM and Jetpack Compose to serve over 5 million users."
-                playstoreLink="https://play.google.com/store/apps/details?id=com.itau.empresas&hl=pt_PT"
+                toolsUsed={[
+                  "Kotlin",
+                  "Android",
+                  "MVVM",
+                  "Coroutines",
+                  "CI/CD",
+                  "Jenkins",
+                  "SharedPreferences",
+                  "Jetpack Libraries (Flow, LiveData, Viewmodel)",
+                  "WebView",
+                  "Reactive programming with BFF",
+                  "Google Analytics",
+                  "Firebase Crashlytics",
+                  "JUnit",
+                  "E2E Testing",
+                  "Gherkin",
+                ]}
                 onClick={() => {
                   navigate("/project-details", {
                     state: {
                       title: "Itaú Empresas",
-                      details: "As part of the NTT Data team, I engineered and maintained features for the high-scale Itaú Empresas mobile banking application. I utilized modern Android architecture like MVVM and reactive programming with Jetpack Compose to enhance code maintainability and application responsiveness for a user base exceeding 5 million. Additionally, I took responsibility for managing and optimizing CI/CD pipelines with Jenkins to automate builds and deployments, increasing the overall development velocity of the team.",
+                      playstoreLink: "https://play.google.com/store/apps/details?id=com.itau.empresas&hl=pt_PT",
+                      details: "Engineered and maintained Itaú Empresas, a large-scale mobile banking app used by 5M+ users, by applying MVVM, reactive programming, and Jetpack Compose to deliver responsive UIs and maintainable code. Built the “My Receivables” and “Cash Flow” SDKs, allowing clients to easily track income and expenses; these features were fully covered by automated testing with Appium and Selenium, helping to reduce call center demand. Developed the Financial Management flow, integrating receivables, cash flow, and expense tracking into a unified digital experience that improved financial visibility for small and medium-sized businesses. Streamlined delivery by managing CI/CD pipelines with Jenkins, automating build and deployment processes and increasing development velocity.",
                       imgPath: empresas_1,
                       timeline: "2022 - 2023",
                       role: "Android Engineer",
@@ -151,6 +187,34 @@ function Home() {
               />
             </Col>
 
+
+            <Col md={12} className="project-card mb-4">
+              <ProjectCard
+                imgPath={vip_sports}
+                isBlog={false}
+                subtitle="2023"
+                title="Vip Sports"
+                description="A native Android app for managing a sports training club, built with Kotlin and powered by Firebase as a serverless backend."
+                toolsUsed={["Android", "Kotlin", "Jetpack Compose", "Firebase", 
+                  "Coroutines","Room","Retrofit"]}
+                onClick={() => {
+                  navigate("/project-details", {
+                    state: {
+                      title: "Vip Sports",
+                      details: "Developed and continue to provide support for our sports training club management app, built with Kotlin for Android, and powered by Firebase as the serverless backend.",
+                      imgPath: vip_sports,
+                      timeline: "2023",
+                      role: "Personal Project",
+                      responsibilities: [
+                        "Develop a native Android app with Kotlin.",
+                        "Implement Firebase as the serverless backend.",
+                        "Provide ongoing support and maintenance."
+                      ],
+                    },
+                  });
+                }}
+              />
+            </Col>
             <Col md={12} className="project-card mb-4">
               <ProjectCard
                 imgPath={unique_parking}
@@ -158,6 +222,13 @@ function Home() {
                 title="Unique Parking"
                 subtitle="2021"
                 description="Developed a React Native app for parking management, featuring Bluetooth printer integration for streamlined financial control and receipt generation."
+                toolsUsed={[
+                  "React Native",
+                  "Android/iOS",
+                  "SOLID",
+                  "UI/UX Design",
+                  "Play Store",
+                ]}
                 onClick={() => {
                   navigate("/project-details", {
                     state: {
@@ -176,43 +247,15 @@ function Home() {
                 }}
               />
             </Col>
-
-            <Col md={12} className="project-card mb-4">
-              <ProjectCard
-                imgPath={cerveja_certa}
-                isBlog={false}
-                title="Cerveja Certa"
-                subtitle="2021"
-                description="Built and launched 'Cerveja Certa,' a React Native utility app that acts as an intelligent beer calculator to help users make cost-effective choices."
-                onClick={() => {
-                  navigate("/project-details", {
-                    state: {
-                      title: "Cerveja Certa",
-                      details: "As one of two applications I managed through the full lifecycle at Unique Sistemas, Cerveja Certa is an intelligent beer calculator designed to help users make cost-effective purchasing decisions. Built using React Native, I translated the design concepts into a functional, published application on the Google Play Store, handling everything from development and testing to the final release.",
-                      imgPath: cerveja_certa,
-                      timeline: "2021",
-                      role: "Mobile Developer",
-                      responsibilities: [
-                        "Manage the full application lifecycle from development to release.",
-                        "Develop a cross-platform utility app using React Native.",
-                        "Publish the application to the Google Play Store."
-                      ],
-                    },
-                  });
-                }}
-              />
-            </Col>
-
           </Row>
         </Container>
       </Container>
       <Container>
         <h1 className="project-heading">
-          <strong className="purple">Projects</strong>
+          <strong className="purple" style={{
+            fontFamily: 'Playfair Display', fontWeight: 700
+          }}>Personal Projects</strong>
         </h1>
-        <p style={{ color: "white" }}>
-          When I'm not working, I love to build things.
-        </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
           <Col md={12} className="project-card mb-4">
@@ -223,6 +266,13 @@ function Home() {
               subtitle="2024"
               description="A companion app for LoL players providing real-time insights and strategy tips. Built with Kotlin Multiplatform to run seamlessly on Android and iOS."
               ghLink="https://github.com/allan8araujo/league_of_legends_assistant?tab=readme-ov-file"
+              toolsUsed={[
+                  "Kotlin Multiplatform (KMP)",
+                  "Compose Multiplatform",
+                  "AI integration",
+                  "Gemini API",
+                  "UI/UX Design",
+              ]}
               onClick={() => {
                 navigate("/project-details", {
                   state: {
@@ -244,38 +294,20 @@ function Home() {
 
           <Col md={12} className="project-card mb-4">
             <ProjectCard
-              imgPath={vip_sports}
-              isBlog={false}
-              subtitle="2023"
-              title="Vip Sports"
-              description="A native Android app for managing a sports training club, built with Kotlin and powered by Firebase as a serverless backend."
-              onClick={() => {
-                navigate("/project-details", {
-                  state: {
-                    title: "Vip Sports",
-                    details: "Developed and continue to provide support for our sports training club management app, built with Kotlin for Android, and powered by Firebase as the serverless backend.",
-                    imgPath: vip_sports,
-                    timeline: "2023",
-                    role: "Personal Project",
-                    responsibilities: [
-                      "Develop a native Android app with Kotlin.",
-                      "Implement Firebase as the serverless backend.",
-                      "Provide ongoing support and maintenance."
-                    ],
-                  },
-                });
-              }}
-            />
-          </Col>
-
-          <Col md={12} className="project-card mb-4">
-            <ProjectCard
               imgPath={crypto_currency_app}
               isBlog={false}
               title="Crypto Currency App"
               subtitle="2022"
               description="A native Android app built with Kotlin to track, filter, and favorite various cryptocurrencies, consuming a public API for real-time data."
               ghLink="https://github.com/allan8araujo/crypto_currency_app?tab=readme-ov-file"
+              toolsUsed={[
+                  "Kotlin",
+                  "Android",
+                  "Coroutines",
+                  "Retrofit",
+                  "Room",
+                  "MVVM"
+              ]}
               onClick={() => {
                 navigate("/project-details", {
                   state: {
@@ -299,8 +331,10 @@ function Home() {
 
       <Container fluid className="about-section">
         <Container>
-          <h1 className="project-heading">
-            Professional <strong className="purple">Skillset </strong>
+          <h1 className="project-heading" style={{
+            fontFamily: 'Playfair Display', fontWeight: 700
+          }}>
+            <strong className="purple">Skillset </strong>
           </h1>
 
           <Techstack />

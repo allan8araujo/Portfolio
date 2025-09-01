@@ -13,6 +13,7 @@ function Github() {
         blockSize={15}
         blockMargin={5}
         color="#353535ff"
+        hideMonthLabels={true}
         fontSize={16}
       />
     </Row>
