@@ -338,12 +338,12 @@ function Home() {
 
           <Techstack />
 
-          <h1 className="project-heading">
-            <strong className="purple">Tools</strong> I use
+          <h1 className="project-heading" style={{
+            fontFamily: 'Playfair Display', fontWeight: 700
+          }}>
+            <strong className="purple">Tools </strong>
           </h1>
           <Toolstack />
-
-          <Github />
         </Container>
       </Container>
       <Container fluid className="home-about-section" id="contact">
