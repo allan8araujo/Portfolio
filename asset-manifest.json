@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.9e4bc134.css",
-    "main.js": "/Portfolio/static/js/main.8bb99440.js",
+    "main.css": "/Portfolio/static/css/main.036054ff.css",
+    "main.js": "/Portfolio/static/js/main.d971d5df.js",
     "static/js/787.7da95b79.chunk.js": "/Portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/empresas_1.png": "/Portfolio/static/media/empresas_1.b98f8315451473a80039.png",
     "static/media/avatar.png": "/Portfolio/static/media/avatar.75e08b4292ae9f3cee4e.png",
@@ -10,19 +10,21 @@
     "static/media/vip_sports.png": "/Portfolio/static/media/vip_sports.746ccad430a5fd01ef59.png",
     "static/media/emps_1.png": "/Portfolio/static/media/emps_1.0a45ddb6340ebef50faf.png",
     "static/media/league_of_legends_assistant.png": "/Portfolio/static/media/league_of_legends_assistant.8ff6b5b01f7075862ab6.png",
-    "static/media/crypto_currency_app.png": "/Portfolio/static/media/crypto_currency_app.9cac0d1339042d7a6e75.png",
+    "static/media/crypto_currency_app.png": "/Portfolio/static/media/crypto_currency_app.870a056a7395e01be113.png",
+    "static/media/empresas_2.png": "/Portfolio/static/media/empresas_2.a1a38728515aeb451ef5.png",
     "static/media/allan_furtuoso_resume.pdf": "/Portfolio/static/media/allan_furtuoso_resume.b505c5ec85343e72e3f5.pdf",
-    "static/media/bradesco_app.png": "/Portfolio/static/media/bradesco_app.87c68e9dd3576454bdec.png",
-    "static/media/empresas_app.png": "/Portfolio/static/media/empresas_app.47edcaaa25e40caa2249.png",
-    "static/media/emps_app.png": "/Portfolio/static/media/emps_app.bc019e63c5c162cb7006.png",
+    "static/media/empresas_3.png": "/Portfolio/static/media/empresas_3.d58b1dba9cb17afef6a7.png",
+    "static/media/bradesco_app.png": "/Portfolio/static/media/bradesco_app.8f2fe38d21efa84b3591.png",
+    "static/media/empresas_app.png": "/Portfolio/static/media/empresas_app.7a3b1e5318bc4906b353.png",
+    "static/media/emps_app.png": "/Portfolio/static/media/emps_app.835832177bd44e3a6238.png",
     "static/media/pre.svg": "/Portfolio/static/media/pre.64cf9c201ea229c16d83.svg",
     "index.html": "/Portfolio/index.html",
-    "main.9e4bc134.css.map": "/Portfolio/static/css/main.9e4bc134.css.map",
-    "main.8bb99440.js.map": "/Portfolio/static/js/main.8bb99440.js.map",
+    "main.036054ff.css.map": "/Portfolio/static/css/main.036054ff.css.map",
+    "main.d971d5df.js.map": "/Portfolio/static/js/main.d971d5df.js.map",
     "787.7da95b79.chunk.js.map": "/Portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e4bc134.css",
-    "static/js/main.8bb99440.js"
+    "static/css/main.036054ff.css",
+    "static/js/main.d971d5df.js"
   ]
 }
