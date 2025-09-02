@@ -10,6 +10,8 @@ import league_of_legends_assistant from "../../Assets/Projects/league_of_legends
 import unique_parking from "../../Assets/Projects/unique_parking.png";
 import empresas from "../../Assets/Projects/empresas_app.png";
 import empresas_1 from "../../Assets/Projects/empresas_1.png";
+import empresas_2 from "../../Assets/Projects/empresas_2.png";
+import empresas_3 from "../../Assets/Projects/empresas_3.png";
 import emps from "../../Assets/Projects/emps_app.png";
 import emps_1 from "../../Assets/Projects/emps_1.png";
 import bradesco from "../../Assets/Projects/bradesco_app.png";
@@ -23,6 +25,7 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import Footer from "../Footer";
 
 function Home() {
   const navigate = useNavigate();
@@ -171,7 +174,7 @@ function Home() {
                     state: {
                       title: "Itaú Empresas",
                       playstoreLink: "https://play.google.com/store/apps/details?id=com.itau.empresas&hl=pt_PT",
-                      details: "Engineered and maintained Itaú Empresas, a large-scale mobile banking app used by 5M+ users, by applying MVVM, reactive programming, and Jetpack Compose to deliver responsive UIs and maintainable code. Built the “My Receivables” and “Cash Flow” SDKs, allowing clients to easily track income and expenses; these features were fully covered by automated testing with Appium and Selenium, helping to reduce call center demand. Developed the Financial Management flow, integrating receivables, cash flow, and expense tracking into a unified digital experience that improved financial visibility for small and medium-sized businesses. Streamlined delivery by managing CI/CD pipelines with Jenkins, automating build and deployment processes and increasing development velocity.",
+                      details: "Engineered and maintained Itaú Empresas, a large-scale mobile banking app used by 5M+ downloads. It provides financial and digital solutions for companies of all sizes, including business accounts, payments, credit, payroll, insurance, and international trade services. Through its web platform and mobile app, it enables companies to manage cash flow, issue invoices, make payments, access working capital, and integrate with HR and e-commerce tools.",
                       imgPath: empresas_1,
                       timeline: "2022 - 2023",
                       role: "Android Engineer",
@@ -179,7 +182,16 @@ function Home() {
                         "Engineer and maintain features for a high-scale banking app.",
                         "Utilize MVVM and Jetpack Compose to enhance code maintainability.",
                         "Manage and optimize CI/CD pipelines with Jenkins."
-                      ],
+                      ], detailsList: [
+                        {
+                          img: empresas_2,
+                          text: "Developed the Financial Management flow, integrating receivables, cash flow, and expense tracking into a unified digital experience that improved financial visibility for small and medium-sized businesses. Streamlined delivery by managing CI/CD pipelines with Jenkins, automating build and deployment processes and increasing development velocity."
+                        },
+                        {
+                          img: empresas_3,
+                          text: "Built the “My Receivables” and “Cash Flow” SDKs, allowing clients to easily track income and expenses; these features were fully covered by automated testing with Appium and Selenium, helping to reduce call center demand. "
+                        },
+                      ]
                     },
                   });
                 }}
@@ -208,7 +220,7 @@ function Home() {
                         "Develop a native Android app with Kotlin.",
                         "Implement Firebase as the serverless backend.",
                         "Provide ongoing support and maintenance."
-                      ],
+                      ]
                     },
                   });
                 }}
@@ -319,9 +331,17 @@ function Home() {
                       "Develop a native Android app using Kotlin and Clean Architecture.",
                       "Integrate a public API for real-time cryptocurrency data.",
                       "Implement features for tracking, filtering, and favoriting."
-                    ],
-                  },
-                });
+                    ], detailsList: [
+                    {
+                      img: crypto_currency_app,
+                      text: "The app allows users to track crypto prices in real-time."
+                    },
+                    {
+                      img: crypto_currency_app,
+                      text: "Users can favorite specific coins and filter them by categories."
+                    }
+                  ]
+                }});
               }}
             />
           </Col>
@@ -335,9 +355,7 @@ function Home() {
           }}>
             <strong className="purple">Skillset </strong>
           </h1>
-
           <Techstack />
-
           <h1 className="project-heading" style={{
             fontFamily: 'Playfair Display', fontWeight: 700
           }}>
@@ -346,60 +364,7 @@ function Home() {
           <Toolstack />
         </Container>
       </Container>
-      <Container fluid className="home-about-section" id="contact">
-        <Container>
-          <Row>
-            <Col md={12} className="home-about-social">
-              <h1>FIND ME ON</h1>
-              <p>
-                Feel free to connect with me
-              </p>
-              <ul className="home-about-social-links">
-                <li className="social-icons">
-                  <a
-                    href="https://github.com/allan8araujo"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icon-colour  home-social-icons"
-                  >
-                    <AiFillGithub />
-                  </a>
-                </li>
-                <li className="social-icons">
-                  <a
-                    href="https://x.com/allanzao08"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icon-colour  home-social-icons"
-                  >
-                    <AiOutlineTwitter />
-                  </a>
-                </li>
-                <li className="social-icons">
-                  <a
-                    href="https://www.linkedin.com/in/allan8araujo/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icon-colour  home-social-icons"
-                  >
-                    <FaLinkedinIn />
-                  </a>
-                </li>
-                <li className="social-icons">
-                  <a
-                    href="https://www.instagram.com/allan8araujo"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icon-colour home-social-icons"
-                  >
-                    <AiFillInstagram />
-                  </a>
-                </li>
-              </ul>
-            </Col>
-          </Row>
-        </Container>
-      </Container>
+    <Footer />
     </section>
   );
 }

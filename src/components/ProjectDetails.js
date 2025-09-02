@@ -3,6 +3,8 @@ import { Container, Row, Col, Button } from "react-bootstrap"; // Import Button
 import "../style.css"; // Your custom styles
 import { BsGooglePlay } from "react-icons/bs"; // Import a nice icon
 import React, { useState, useEffect } from "react";
+import Footer from "./Footer";
+
 
 export default function ProjectDetails() {
   const location = useLocation();
@@ -14,14 +16,14 @@ export default function ProjectDetails() {
     role, 
     timeline, 
     responsibilities, 
-    playstoreLink 
+    playstoreLink,
+    detailsList = []   // NEW
   } = location.state || {};
+console.log("detailsList:", detailsList);
 
-  // 2. State to store the vertical scroll offset
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.scrollY);
 
-  // 3. Effect to add and remove the scroll event listener
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
@@ -98,28 +100,40 @@ export default function ProjectDetails() {
             <p>{details}</p>
           </Col>
         </Row>
-        {playstoreLink && (
-          <Row className="justify-content-center text-center mt-4 mb-5">
+
+        {/* NEW Alternating Details List */}
+        {detailsList.map((item, index) => (
+          <Row
+            key={index}
+            className={`align-items-center my-5 ${
+              index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+            }`}
+          >
+            <Col md={6} className="text-center">
+              <img
+                src={item.img}
+                alt={`detail-${index}`}
+                className="img-fluid"
+              />
+            </Col>
             <Col md={6}>
-              <Button
-                href={playstoreLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                variant="dark"
-                size="lg"
-                style={{
-                  minWidth: "250px",
-                  fontSize: "1.1rem",
-                  padding: "12px 24px",
-                }}
-              >
-                <BsGooglePlay size={22} style={{ marginRight: "12px" }} />
-                View on Google Play
-              </Button>
+              <p className="lead">{item.text}</p>
             </Col>
           </Row>
-        )}
+        ))}
+        {/* Play Store Button */}
+        <div className="text-center my-4">
+          <a
+            href={playstoreLink}
+            className="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View on Play Store
+          </a>
+        </div>
       </Container>
+    <Footer />
     </div>
   );
 }

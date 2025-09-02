@@ -494,7 +494,6 @@ button:focus {
   background-color: #ffffff;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  margin: 16px;
   /* Add some margin */
 }
 
