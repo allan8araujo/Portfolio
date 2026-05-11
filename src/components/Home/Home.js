@@ -50,7 +50,7 @@ function Home() {
               </h1>
               <div className="home-about-description">
                 <p className="home-about-body">
-                  <p>Android Developer with 4+ years of experience designing and delivering scalable mobile solutions for high-impact financial and enterprise apps. Skilled in Kotlin, Java, and modern Android frameworks, with a strong background in problem-solving and app lifecycle management.</p>
+                  <p>Android Developer with 5+ years of experience designing and delivering scalable mobile solutions for high-impact financial and enterprise apps. Skilled in Kotlin, Java, and modern Android frameworks, with a strong background in problem-solving and app lifecycle management.</p>
                   <p>Currently driving mobile innovation at CI&T, building and enhancing Android applications for enterprise clients, ensuring code quality, scalability, and performance across complex ecosystems.</p>
                   <p>Alongside professional work, I am an active contributor to the developer community, publishing applications on the Google Play Store and sharing open-source projects and insights on GitHub.</p>
                 </p>
@@ -81,8 +81,12 @@ function Home() {
                 title="Bradesco Empresas e Negócios"
                 subtitle="Sep 2024 - Present"
                 description="As a key Android Engineer, I developed the secure digital account opening flow, enabling document capture and facial biometrics for over 100k users."
-                toolsUsed={["Android", "Kotlin", "Javascript", "Jetpack Compose",
-                  "Coroutines", "Firebase", "Retrofit", "Webview SDKs"]}
+                toolsUsed={["Android", "Kotlin", "Javascript", "Jetpack Compose", "MVVM",
+                  "Jetpack Libraries (Flow, LiveData, Viewmodel)",
+                  "Coroutines", "Firebase", "Retrofit", "Webview SDKs",
+                  "Firebase Crashlytics",
+                  "JUnit", "Espresso", "Automated test", "Appium", "Cucumber",
+                  "Gherkin", "BDD"]}
                 onClick={() => {
                   navigate("/project-details", {
                     state: {
@@ -123,7 +127,8 @@ function Home() {
                   "Google Analytics", "Koin", "Flow",
                   "Jetpack Libraries (Flow, LiveData, Viewmodel)",
                   "Firebase Crashlytics",
-                  "JUnit",
+                  "JUnit", "Espresso", "Automated test", "Appium", "Cucumber", 
+                  "Gherkin","BDD"
                 ]}
                 onClick={() => {
                   navigate("/project-details", {
