@@ -1,30 +1,32 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.0840740a.css",
-    "main.js": "/Portfolio/static/js/main.02cbf1ee.js",
-    "static/js/453.3f1fb51b.chunk.js": "/Portfolio/static/js/453.3f1fb51b.chunk.js",
+    "main.css": "/Portfolio/static/css/main.255bcd17.css",
+    "main.js": "/Portfolio/static/js/main.806573a1.js",
+    "static/js/787.7da95b79.chunk.js": "/Portfolio/static/js/787.7da95b79.chunk.js",
+    "static/media/avatar.jpg": "/Portfolio/static/media/avatar.3a96c4e07eb7c6a1a72d.jpg",
     "static/media/empresas_1.png": "/Portfolio/static/media/empresas_1.b98f8315451473a80039.png",
-    "static/media/avatar.png": "/Portfolio/static/media/avatar.75e08b4292ae9f3cee4e.png",
     "static/media/bradesco_1.png": "/Portfolio/static/media/bradesco_1.d562e710865d172a2f7e.png",
     "static/media/unique_parking.png": "/Portfolio/static/media/unique_parking.5b8f3f6fadc7db9c0cf4.png",
     "static/media/vip_sports.png": "/Portfolio/static/media/vip_sports.746ccad430a5fd01ef59.png",
     "static/media/emps_1.png": "/Portfolio/static/media/emps_1.0a45ddb6340ebef50faf.png",
+    "static/media/cerveja_certa.png": "/Portfolio/static/media/cerveja_certa.a32c7b5abc435be3e199.png",
     "static/media/league_of_legends_assistant.png": "/Portfolio/static/media/league_of_legends_assistant.8ff6b5b01f7075862ab6.png",
     "static/media/crypto_currency_app.png": "/Portfolio/static/media/crypto_currency_app.870a056a7395e01be113.png",
-    "static/media/allan_furtuoso_resume.pdf": "/Portfolio/static/media/allan_furtuoso_resume.4aed1517760947a4ca6d.pdf",
+    "static/media/allan_furtuoso_resume.pdf": "/Portfolio/static/media/allan_furtuoso_resume.0273701c4e2ce5d011fe.pdf",
     "static/media/empresas_2.png": "/Portfolio/static/media/empresas_2.a1a38728515aeb451ef5.png",
+    "static/media/bradesco_app.png": "/Portfolio/static/media/bradesco_app.379baee07021031769b6.png",
     "static/media/empresas_3.png": "/Portfolio/static/media/empresas_3.d58b1dba9cb17afef6a7.png",
-    "static/media/bradesco_app.png": "/Portfolio/static/media/bradesco_app.8f2fe38d21efa84b3591.png",
-    "static/media/empresas_app.png": "/Portfolio/static/media/empresas_app.7a3b1e5318bc4906b353.png",
-    "static/media/emps_app.png": "/Portfolio/static/media/emps_app.835832177bd44e3a6238.png",
+    "static/media/empresas_app.png": "/Portfolio/static/media/empresas_app.0a971ef288c825e1a0bc.png",
+    "static/media/emps_app.png": "/Portfolio/static/media/emps_app.dac53be95fab454365e1.png",
+    "static/media/bradesco_miniatura.png": "/Portfolio/static/media/bradesco_miniatura.3743e5c5eeae591bf9a9.png",
     "static/media/pre.svg": "/Portfolio/static/media/pre.64cf9c201ea229c16d83.svg",
     "index.html": "/Portfolio/index.html",
-    "main.0840740a.css.map": "/Portfolio/static/css/main.0840740a.css.map",
-    "main.02cbf1ee.js.map": "/Portfolio/static/js/main.02cbf1ee.js.map",
-    "453.3f1fb51b.chunk.js.map": "/Portfolio/static/js/453.3f1fb51b.chunk.js.map"
+    "main.255bcd17.css.map": "/Portfolio/static/css/main.255bcd17.css.map",
+    "main.806573a1.js.map": "/Portfolio/static/js/main.806573a1.js.map",
+    "787.7da95b79.chunk.js.map": "/Portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0840740a.css",
-    "static/js/main.02cbf1ee.js"
+    "static/css/main.255bcd17.css",
+    "static/js/main.806573a1.js"
   ]
 }
