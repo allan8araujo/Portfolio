@@ -41,11 +41,11 @@ function Home() {
                 <strong className="main-name"> I'M ALLAN ARAÚJO</strong>
               </h1>
               <h1 className="heading-subtitle" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                Senior Android Engineer <DiAndroid style={{ color: "#3DDC84", fontSize: "1.4em" }} />
+                <strong>Senior Android Engineer</strong> <DiAndroid style={{ color: "#3DDC84", fontSize: "1.4em" }} />
               </h1>
               <div className="home-about-description">
                 <p className="home-about-body">
-                  <p style={{ textAlign: "justify" }}>{highlightKeywords("Senior Android Engineer with 5+ years of experience building high-scale Android applications using Kotlin, Jetpack Compose, Coroutines, Flow, and Clean Architecture. Specialized in banking and enterprise solutions, delivering secure, scalable, and high-performance mobile experiences used by thousands to millions of users.")}</p>
+                  <p style={{ textAlign: "justify" }}>{highlightKeywords("5+ years of experience building high-scale Android applications using Kotlin, Jetpack Compose, Coroutines, Flow, and Clean Architecture. Specialized in banking and enterprise solutions, delivering secure, scalable, and high-performance mobile experiences used by thousands to millions of users.")}</p>
                   <p style={{ textAlign: "justify" }}>{highlightKeywords("Currently working at CI&T, developing Android solutions for one of Brazil's largest financial institutions. I contribute to architecture decisions, code reviews, mentoring, and the delivery of modern mobile features while maintaining high standards for performance, reliability, and code quality.")}</p>
                   <p style={{ textAlign: "justify" }}>{highlightKeywords("Outside of work, I build personal Android applications published on Google Play, contribute open-source projects on GitHub, and continuously explore modern Android technologies, AI-assisted development, and software architecture.")}</p>
                 </p>
