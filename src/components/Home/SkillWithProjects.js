@@ -100,8 +100,8 @@ export default function SkillWithProjects({ icon, label, projects = [] }) {
                   if (proj.state) navigate("/project-details", { state: proj.state });
                 }}
               >
-                {(proj.miniatura ?? proj.img)
-                  ? <img src={proj.miniatura ?? proj.img} alt={proj.name} />
+                {proj.miniatura
+                  ? <img src={proj.miniatura} alt={proj.name} />
                   : <div className="skill-thumb-placeholder"><AiFillGithub /></div>
                 }
                 <span className="skill-thumb-label">{proj.name}</span>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import { SiKotlin, SiFlutter, SiReact } from "react-icons/si";
+import { SiKotlin, SiReact } from "react-icons/si";
 import { DiJavascript1, DiJava, DiPython } from "react-icons/di";
 import SkillWithProjects from "./SkillWithProjects";
 
@@ -18,6 +18,7 @@ import cervejaCerta from "../../Assets/Projects/cerveja_certa.png";
 import bradesco_miniatura from "../../Assets/Projects/bradesco_miniatura.png";
 import itau_emps_miniatura from "../../Assets/Projects/itau_emps_miniatura.png";
 import itau_empresas_miniatura from "../../Assets/Projects/itau_empresas_miniatura.png";
+import unique_sistemas_miniatura from "../../Assets/Projects/unique_sistemas_miniatura.png";
 
 const PROJECTS = {
   kotlin: [
@@ -95,7 +96,7 @@ const PROJECTS = {
   ],
   javascript: [
     {
-      img: bradesco, name: "Bradesco",
+      img: bradesco, miniatura: bradesco_miniatura, name: "Bradesco",
       state: {
         title: "Bradesco Empresas e Negócios", imgPath: bradesco_1,
         timeline: "Sep 2024 - Present", role: "Senior Android Engineer",
@@ -105,7 +106,7 @@ const PROJECTS = {
       },
     },
     {
-      img: uniqueParking, miniatura: undefined, name: "Unique Parking",
+      img: uniqueParking, miniatura: unique_sistemas_miniatura, name: "Unique Parking",
       state: {
         title: "Unique Parking", imgPath: uniqueParking,
         timeline: "2021", role: "Mobile Developer",
@@ -120,7 +121,7 @@ const PROJECTS = {
   ],
   react: [
     {
-      img: uniqueParking, miniatura: undefined, name: "Unique Parking",
+      img: uniqueParking, miniatura: unique_sistemas_miniatura, name: "Unique Parking",
       state: {
         title: "Unique Parking", imgPath: uniqueParking,
         timeline: "2021", role: "Mobile Developer",
@@ -141,10 +142,8 @@ const PROJECTS = {
         responsibilities: ["Build a React app consuming a public crypto API.", "Display real-time price data."],
       },
     },
-  ],
-  flutter: [
     {
-      img: cervejaCerta, miniatura: undefined, name: "Cerveja Certa",
+      img: cervejaCerta, miniatura: unique_sistemas_miniatura, name: "Cerveja Certa",
       state: {
         title: "Cerveja Certa", imgPath: cervejaCerta,
         timeline: "2022", role: "Personal Project",
@@ -198,7 +197,6 @@ const SKILLS = [
   { icon: <SiKotlin />,      label: "Kotlin",      projects: PROJECTS.kotlin },
   { icon: <DiJavascript1 />, label: "JavaScript",  projects: PROJECTS.javascript },
   { icon: <SiReact />,       label: "React",       projects: PROJECTS.react },
-  { icon: <SiFlutter />,     label: "Flutter",     projects: PROJECTS.flutter },
   { icon: <DiJava />,        label: "Java",        projects: PROJECTS.java },
   { icon: <DiPython />,      label: "Python",      projects: PROJECTS.python },
 ];

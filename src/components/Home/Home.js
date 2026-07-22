@@ -1,12 +1,13 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+import Tilt from "react-parallax-tilt";
 import { highlightKeywords } from "../../utils/highlightKeywords";
-
 import Techstack from "./Techstack";
 import Toolstack from "./Toolstack";
 import Github from "./Github";
-import myImg from "../../Assets/avatar.jpg";
-import Tilt from "react-parallax-tilt";
+import Footer from "../Footer";
 import ProjectCard from "../Projects/ProjectCards";
+import myImg from "../../Assets/avatar.jpg";
 import league_of_legends_assistant from "../../Assets/Projects/league_of_legends_assistant.png";
 import unique_parking from "../../Assets/Projects/unique_parking.png";
 import empresas from "../../Assets/Projects/empresas_app.png";
@@ -19,48 +20,43 @@ import bradesco from "../../Assets/Projects/bradesco_app.png";
 import bradesco_1 from "../../Assets/Projects/bradesco_1.png";
 import crypto_currency_app from "../../Assets/Projects/crypto_currency_app.png";
 import vip_sports from "../../Assets/Projects/vip_sports.png";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiOutlineTwitter, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
-import Footer from "../Footer";
+import { DiAndroid } from "react-icons/di";
 
 function Home() {
   const navigate = useNavigate();
+
   return (
     <section>
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
           <Row className="hero-row" style={{ alignItems: "stretch" }}>
-            <Col md={5} className="home-header">
+            <Col md={6} className="home-header">
               <h1 className="heading">
-                Hi, {" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
+                Hi,
               </h1>
 
               <h1 className="heading-name">
                 <strong className="main-name"> I'M ALLAN ARAÚJO</strong>
               </h1>
-              <h1 className="heading-subtitle">
-                Senior Android Engineer
+              <h1 className="heading-subtitle" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                Senior Android Engineer <DiAndroid style={{ color: "#3DDC84", fontSize: "1.4em" }} />
               </h1>
               <div className="home-about-description">
                 <p className="home-about-body">
-                  <p>{highlightKeywords("Senior Android Engineer with 5+ years of experience building high-scale Android applications using Kotlin, Jetpack Compose, Coroutines, Flow, and Clean Architecture. Specialized in banking and enterprise solutions, delivering secure, scalable, and high-performance mobile experiences used by thousands to millions of users.")}</p>
-                  <p>{highlightKeywords("Currently working at CI&T, developing Android solutions for one of Brazil's largest financial institutions. I contribute to architecture decisions, code reviews, mentoring, and the delivery of modern mobile features while maintaining high standards for performance, reliability, and code quality.")}</p>
-                  <p>{highlightKeywords("Outside of work, I build personal Android applications published on Google Play, contribute open-source projects on GitHub, and continuously explore modern Android technologies, AI-assisted development, and software architecture.")}</p>
+                  <p style={{ textAlign: "justify" }}>{highlightKeywords("Senior Android Engineer with 5+ years of experience building high-scale Android applications using Kotlin, Jetpack Compose, Coroutines, Flow, and Clean Architecture. Specialized in banking and enterprise solutions, delivering secure, scalable, and high-performance mobile experiences used by thousands to millions of users.")}</p>
+                  <p style={{ textAlign: "justify" }}>{highlightKeywords("Currently working at CI&T, developing Android solutions for one of Brazil's largest financial institutions. I contribute to architecture decisions, code reviews, mentoring, and the delivery of modern mobile features while maintaining high standards for performance, reliability, and code quality.")}</p>
+                  <p style={{ textAlign: "justify" }}>{highlightKeywords("Outside of work, I build personal Android applications published on Google Play, contribute open-source projects on GitHub, and continuously explore modern Android technologies, AI-assisted development, and software architecture.")}</p>
                 </p>
               </div>
             </Col>
-            <Col md={2} />
-            <Col md={4} className="myAvtar">
+            <Col md={1} />
+            <Col md={5} className="myAvtar">
               <Tilt style={{ height: "100%", display: "flex", flexDirection: "column" }}>
-                <img src={myImg} alt="avatar" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", borderRadius: "8px" }} />
+                <div style={{ overflow: "hidden", height: "100%", borderRadius: "8px" }}>
+                  <img src={myImg} alt="avatar" style={{ width: "100%", height: "calc(100% + 100px)", objectFit: "cover", objectPosition: "center top", marginTop: "-100px" }} />
+                </div>
               </Tilt>
             </Col>
           </Row>

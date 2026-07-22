@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
+@media (min-width: 992px) {
+  .container { max-width: 1020px !important; }
+}
+@media (min-width: 1200px) {
+  .container { max-width: 1270px !important; }
+}
+@media (min-width: 1400px) {
+  .container { max-width: 1520px !important; }
+}
+
 html {
 
   --image-gradient: linear-gradient(to bottom left,
@@ -78,7 +88,7 @@ button:focus {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   /* Sets the default weight to regular */
-  font-size: 1.2rem !important;
+  font-size: 1.9rem !important;
 }
 
 .navbar-toggler {
@@ -356,6 +366,7 @@ button:focus {
   display: flex !important;
   flex-direction: column !important;
   padding-top: 0 !important;
+  max-height: 850px !important;
 }
 
 @media (max-width: 767px) {
@@ -380,7 +391,7 @@ button:focus {
 }
 
 .home-about-body {
-  font-size: 1.2em !important;
+  font-size: 1.5em !important;
   text-align: left;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -660,7 +671,7 @@ button:focus {
   /* The text content area */
   .project-card-content {
     padding: 15px;
-    margin-left: 15em;
+    margin-left: 22%;
   }
 
   .project-card-no-image .project-card-content {
@@ -820,11 +831,12 @@ button:focus {
   right: 0;
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
-  font-size: 0.55rem;
+  font-size: 1.2rem;
   font-family: 'Inter', sans-serif;
   text-align: center;
-  padding: 2px 0;
-  white-space: nowrap;
+  padding: 2px 4px;
+  white-space: normal;
+  word-break: break-word;
   overflow: hidden;
   text-overflow: ellipsis;
 }
