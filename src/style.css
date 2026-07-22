@@ -284,7 +284,32 @@ button:focus {
   font-size: 1.7em !important;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  /* Sets the default weight to regular */
+}
+
+@media (max-width: 767px) {
+  .home-content {
+    padding: 5.5rem 1rem 2rem !important;
+  }
+
+  .home-header {
+    padding-top: 20px !important;
+  }
+
+  .heading {
+    font-size: 1.7em !important;
+  }
+
+  .heading-name {
+    font-size: 2.2em !important;
+  }
+
+  .heading-subtitle {
+    font-size: 1.2em !important;
+  }
+
+  .hero-row {
+    align-items: flex-start !important;
+  }
 }
 
 .main-name {
@@ -328,8 +353,16 @@ button:focus {
 }
 
 .myAvtar {
-  justify-content: center !important;
-  padding-top: 5em !important;
+  display: flex !important;
+  flex-direction: column !important;
+  padding-top: 0 !important;
+}
+
+@media (max-width: 767px) {
+  .myAvtar {
+    min-height: 360px !important;
+    margin-top: 2rem !important;
+  }
 }
 
 .home-about-section {
@@ -351,7 +384,17 @@ button:focus {
   text-align: left;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  /* Sets the default weight to regular */
+}
+
+@media (max-width: 767px) {
+  .home-about-description {
+    padding-top: 20px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .home-about-body {
+    font-size: 1em !important;
+  }
 }
 
 .home-about-social {
@@ -477,10 +520,35 @@ button:focus {
   background-image: var(--section-background-color) !important;
 }
 
+@media (max-width: 767px) {
+  .project-section {
+    padding-top: 40px !important;
+  }
+}
+
 .project-card {
   padding-left: 24px !important;
   padding-right: 24px !important;
   height: auto !important;
+}
+
+@media (max-width: 767px) {
+  .project-card {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .project-card-title {
+    font-size: 1.5rem !important;
+  }
+
+  .project-card-image {
+    display: none !important;
+  }
+
+  .project-card-content {
+    margin-left: 0 !important;
+  }
 }
 
 /* --- Mobile-First Styles (Default for all screen sizes) --- */
@@ -498,22 +566,26 @@ button:focus {
 }
 
 .project-card-image {
-  /* Image takes full width */
-  /* Give it a fixed height */
   object-fit: cover;
-  /* Prevents image from stretching */
+}
+
+.project-card-github-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a1a2e;
+  color: #ffffff;
+  font-size: 5rem;
 }
 
 .project-card-content {
   padding: 20px;
   margin-left: 0;
-  /* No margin on mobile */
 }
 
 .project-card-title {
   font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
-  /* Smaller font size for mobile */
   font-weight: 700;
   color: #000000;
 }
@@ -579,7 +651,6 @@ button:focus {
     left: 0;
     top: 0;
     bottom: 0;
-    /* USE THIS INSTEAD OF height: 100% */
     width: 20%;
     object-fit: cover;
     transform: translateX(-80%);
@@ -590,13 +661,14 @@ button:focus {
   .project-card-content {
     padding: 15px;
     margin-left: 15em;
-    /* Default state: no left margin */
   }
 
-  /* The text content area */
+  .project-card-no-image .project-card-content {
+    margin-left: 0;
+  }
+
   .project-card-title {
     font-family: 'Playfair Display', serif;
-    /* Use the font name here! */
   }
 
   /* --- Hover Effects --- */
@@ -639,10 +711,15 @@ button:focus {
   color: rgb(66, 66, 66) !important;
   padding-bottom: 32px;
   font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  /* Sets the default weight to regular */
-  font-size: 3em !important;
   font-weight: 500 !important;
+  font-size: 3em !important;
+}
+
+@media (max-width: 767px) {
+  .project-heading {
+    font-size: 2em !important;
+    padding-bottom: 20px;
+  }
 }
 
 /* --------- */
@@ -655,6 +732,12 @@ button:focus {
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   color: white !important;
+}
+
+@media (max-width: 767px) {
+  .about-section {
+    padding-top: 80px !important;
+  }
 }
 
 .tech-icons {
@@ -684,6 +767,66 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
+}
+
+/* ---- Skill hover thumbnails ---- */
+.skill-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes skill-ring {
+  0%   { box-shadow: 4px 5px 4px 3px rgba(89,4,168,0.137), 0 0 0 0 rgba(0,0,0,0.18); }
+  70%  { box-shadow: 4px 5px 4px 3px rgba(89,4,168,0.137), 0 0 0 12px rgba(0,0,0,0); }
+  100% { box-shadow: 4px 5px 4px 3px rgba(89,4,168,0.137), 0 0 0 0 rgba(0,0,0,0); }
+}
+
+.skill-ring {
+  animation: skill-ring 1s ease-out infinite !important;
+}
+
+.skill-thumb {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.28);
+  transition: opacity 0.35s ease, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.skill-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.skill-thumb-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a1a2e;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 3.5rem;
+}
+
+.skill-thumb-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 0.55rem;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  padding: 2px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .tech-icon-images {
@@ -988,7 +1131,7 @@ button:focus {
 
 @media (max-width: 767.98px) {
   .project-title-large {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .client-info {
@@ -998,5 +1141,13 @@ button:focus {
 
   .project-info-grid .info-block {
     text-align: left !important;
+  }
+
+  .project-details-page {
+    padding-top: 60px;
+  }
+
+  .project-header-section {
+    padding-top: 1rem !important;
   }
 }

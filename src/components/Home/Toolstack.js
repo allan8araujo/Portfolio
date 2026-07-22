@@ -6,6 +6,11 @@ import {
   SiFirebase,
   SiMacos,
   SiFigma,
+  SiGit,
+  SiGithub,
+  SiJira,
+  SiSlack,
+  SiGradle,
 } from "react-icons/si";
 
 import {
@@ -35,7 +40,30 @@ function Toolstack() {
         <SiFigma />
         <p style={{ fontSize: 24 }}>Figma</p>
       </Col>
-
+      <Col xs={4} md={2} className="tech-icons">
+        <span style={{ fontSize: "2.5rem", fontWeight: 700, lineHeight: 1 }}>C</span>
+        <p style={{ fontSize: 24 }}>Claude</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGit />
+        <p style={{ fontSize: 24 }}>Git</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGithub />
+        <p style={{ fontSize: 24 }}>GitHub</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiJira />
+        <p style={{ fontSize: 24 }}>Jira</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiSlack />
+        <p style={{ fontSize: 24 }}>Slack</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGradle />
+        <p style={{ fontSize: 24 }}>Gradle</p>
+      </Col>
     </Row>
   );
 }

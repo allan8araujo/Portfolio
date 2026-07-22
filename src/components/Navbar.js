@@ -27,16 +27,9 @@ function NavBar() {
       expand="md"
     >
       <Container>
-        <Navbar.Brand as={HashLink} smooth to="/#home" className="d-flex">
-          <span className="brand-name">Allan<span style={{
-            fontWeight: 700,
-            fontSize: "1.4rem",
-            color: "#000000ff",
-            letterSpacing: "1px",
-          }}>Araújo</span></span>
-        </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
+          className="ms-auto"
           onClick={() => {
             updateExpanded(expand ? false : "expanded");
           }}
@@ -46,7 +39,12 @@ function NavBar() {
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="#home">
+          <Nav className="me-auto" defaultActiveKey="#home">
+            <Nav.Item>
+              <Nav.Link as={HashLink} smooth to="/#home">Home</Nav.Link>
+            </Nav.Item>
+          </Nav>
+          <Nav className="ms-auto">
             <Nav.Item>
               <Nav.Link as={HashLink} smooth to="/#home">About</Nav.Link>
             </Nav.Item>

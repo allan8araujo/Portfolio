@@ -1,26 +1,39 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import { CgWebsite } from "react-icons/cg";
+import { AiFillGithub } from "react-icons/ai";
+
+function getYearsAgo(subtitle) {
+  if (!subtitle || subtitle.toLowerCase().includes("present")) return null;
+  const years = subtitle.match(/\d{4}/g);
+  if (!years) return null;
+  const diff = new Date().getFullYear() - parseInt(years[years.length - 1]);
+  if (diff <= 0) return null;
+  return `${diff} year${diff !== 1 ? "s" : ""} ago`;
+}
 
 function ProjectCards(props) {
+  const yearsAgo = getYearsAgo(props.subtitle);
   return (
-    <div className="project-card-view" onClick={() => props.onClick()}>
-      <Card.Img
-        src={props.imgPath}
-        alt="card-img"
-        className="project-card-image"
-      />
+    <div className={`project-card-view${props.hideImage ? " project-card-no-image" : ""}`} onClick={() => props.onClick()}>
+      {!props.hideImage && (
+        props.imgPath
+          ? <Card.Img src={props.imgPath} alt="card-img" className="project-card-image" />
+          : (
+            <div className="project-card-image project-card-github-placeholder">
+              <AiFillGithub />
+            </div>
+          )
+      )}
 
       <div className="project-card-content">
         <Card.Body>
           <Card.Title className="project-card-title" style={{fontSize: '2.5rem', color: '#000000', fontWeight: 700}}>{props.title}</Card.Title>
 
           {!props.isBlog && (
-            <Card.Subtitle className="mb-2 text-muted" style={{
-              fontFamily: 'Inter', fontWeight: 400
-            }}>
-              {props.subtitle}
-            </Card.Subtitle>
+            <p className="mb-3" style={{ fontFamily: 'Inter', fontWeight: 400, fontSize: '1.1rem', color: '#555' }}>
+              {yearsAgo ? `${props.subtitle} - ${yearsAgo}` : props.subtitle}
+            </p>
           )}
 
           <Card.Text style={{ textAlign: "justify", color: "#000000ff", fontFamily: 'Inter', fontWeight: 400 }}>

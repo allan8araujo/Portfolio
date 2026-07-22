@@ -1,9 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { highlightKeywords } from "../../utils/highlightKeywords";
 
 import Techstack from "./Techstack";
 import Toolstack from "./Toolstack";
 import Github from "./Github";
-import myImg from "../../Assets/avatar.png";
+import myImg from "../../Assets/avatar.jpg";
 import Tilt from "react-parallax-tilt";
 import ProjectCard from "../Projects/ProjectCards";
 import league_of_legends_assistant from "../../Assets/Projects/league_of_legends_assistant.png";
@@ -33,7 +34,7 @@ function Home() {
     <section>
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
-          <Row>
+          <Row className="hero-row" style={{ alignItems: "stretch" }}>
             <Col md={5} className="home-header">
               <h1 className="heading">
                 Hi, {" "}
@@ -46,20 +47,20 @@ function Home() {
                 <strong className="main-name"> I'M ALLAN ARAÚJO</strong>
               </h1>
               <h1 className="heading-subtitle">
-                Android developer
+                Senior Android Engineer
               </h1>
               <div className="home-about-description">
                 <p className="home-about-body">
-                  <p>Android Developer with 5+ years of experience designing and delivering scalable mobile solutions for high-impact financial and enterprise apps. Skilled in Kotlin, Java, and modern Android frameworks, with a strong background in problem-solving and app lifecycle management.</p>
-                  <p>Currently driving mobile innovation at CI&T, building and enhancing Android applications for enterprise clients, ensuring code quality, scalability, and performance across complex ecosystems.</p>
-                  <p>Alongside professional work, I am an active contributor to the developer community, publishing applications on the Google Play Store and sharing open-source projects and insights on GitHub.</p>
+                  <p>{highlightKeywords("Senior Android Engineer with 5+ years of experience building high-scale Android applications using Kotlin, Jetpack Compose, Coroutines, Flow, and Clean Architecture. Specialized in banking and enterprise solutions, delivering secure, scalable, and high-performance mobile experiences used by thousands to millions of users.")}</p>
+                  <p>{highlightKeywords("Currently working at CI&T, developing Android solutions for one of Brazil's largest financial institutions. I contribute to architecture decisions, code reviews, mentoring, and the delivery of modern mobile features while maintaining high standards for performance, reliability, and code quality.")}</p>
+                  <p>{highlightKeywords("Outside of work, I build personal Android applications published on Google Play, contribute open-source projects on GitHub, and continuously explore modern Android technologies, AI-assisted development, and software architecture.")}</p>
                 </p>
               </div>
             </Col>
             <Col md={2} />
             <Col md={4} className="myAvtar">
-              <Tilt>
-                <img src={myImg} className="img-fluid" alt="avatar" />
+              <Tilt style={{ height: "100%", display: "flex", flexDirection: "column" }}>
+                <img src={myImg} alt="avatar" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", borderRadius: "8px" }} />
               </Tilt>
             </Col>
           </Row>
@@ -80,26 +81,29 @@ function Home() {
                 isBlog={false}
                 title="Bradesco Empresas e Negócios"
                 subtitle="Sep 2024 - Present"
-                description="As a key Android Engineer, I developed the secure digital account opening flow, enabling document capture and facial biometrics for over 100k users."
+                description="As a key Android Engineer, I developed the secure digital account opening flow, enabling document capture and facial biometrics for over 1M+ users."
                 toolsUsed={["Android", "Kotlin", "Javascript", "Jetpack Compose", "MVVM",
                   "Jetpack Libraries (Flow, LiveData, Viewmodel)",
                   "Coroutines", "Firebase", "Retrofit", "Webview SDKs",
                   "Firebase Crashlytics",
                   "JUnit", "Espresso", "Automated test", "Appium", "Cucumber",
-                  "Gherkin", "BDD"]}
+                  "Gherkin", "BDD", "Room"]}
                 onClick={() => {
                   navigate("/project-details", {
                     state: {
                       title: "Bradesco Empresas e Negócios",
-                      details: "Developed and maintained the Bradesco Empresas e Negócios app, a high-traffic mobile banking solution with 100k+ downloads, ensuring stability and usability for business customers. Built document capture and facial biometric flows in Kotlin, enabling users to securely open bank accounts digitally with identity verification. Expanded hybrid app functionality by implementing a custom JavaScript interface that allowed web components to access native Android features such as SharedPreferences and push notifications. Increased application stability by implementing automated tests with Robolectric and Espresso, improving release confidence and reducing bugs in production.",
+                      details: "Developed and enhanced the Bradesco Empresas e Negócios app (1M+ users) using Kotlin, MVVM, and Clean Architecture, delivering secure and scalable banking features for business customers.\n\nDesigned and implemented the digital account opening flow using Jetpack Compose, Kotlin Coroutines, Material Design, and third-party document capture and facial biometrics SDKs, enabling secure digital onboarding and identity verification.\n\nBuilt the Tap on Phone (Cielo) feature, transforming Android devices into NFC-enabled payment terminals for secure contactless payment acceptance.\n\nDeveloped hybrid banking features using Jetpack Compose, ViewBinding/XML, and WebView, implementing JavaScript bridges that enabled web modules to access native Android capabilities such as SharedPreferences, push notifications, and device APIs.\n\nImplemented automated testing with Espresso and Robolectric, improving release reliability and reducing regressions across critical banking features.",
                       imgPath: bradesco_1,
                       playstoreLink: "https://play.google.com/store/apps/details?id=br.com.bradesco.pdpjapp&hl=pt_BR",
                       timeline: "Sep 2024 - Present",
-                      role: "Android Engineer",
+                      role: "Senior Android Engineer",
                       responsibilities: [
-                        "Implement the secure document capture and facial biometrics flow.",
-                        "Enhanced a hybrid application's capabilities by creating a custom JavaScript interface to grant web components access to native Android features (such as sharedPreferences, push notification etc).",
-                        "Develop automated tests using Robolectric and Espresso to increase application stability."
+                        "Design, develop, and maintain native Android features using Kotlin, Jetpack Compose, and MVVM.",
+                        "Implement secure digital onboarding solutions, including document capture and facial biometric verification.",
+                        "Build and maintain hybrid Android features by integrating WebView with native components through JavaScript bridges.",
+                        "Develop automated unit and UI tests using Robolectric and Espresso to improve application quality and release confidence.",
+                        "Collaborate with cross-functional teams to deliver secure, scalable, and high-performance mobile banking solutions.",
+                        "Participate in code reviews and contribute to clean architecture and engineering best practices.",
                       ],
                     },
                   });
@@ -128,7 +132,7 @@ function Home() {
                   "Jetpack Libraries (Flow, LiveData, Viewmodel)",
                   "Firebase Crashlytics",
                   "JUnit", "Espresso", "Automated test", "Appium", "Cucumber", 
-                  "Gherkin","BDD"
+                  "Gherkin","BDD", "Room"
                 ]}
                 onClick={() => {
                   navigate("/project-details", {
@@ -173,6 +177,7 @@ function Home() {
                   "JUnit",
                   "E2E Testing",
                   "Gherkin",
+                  "Room",
                 ]}
                 onClick={() => {
                   navigate("/project-details", {
@@ -274,9 +279,10 @@ function Home() {
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
-          <Col md={12} className="project-card mb-4">
+          <Col md={6} className="project-card mb-4">
             <ProjectCard
-              imgPath={league_of_legends_assistant}
+              hideImage
+              imgPath={null}
               isBlog={false}
               title="League of Legends Assistant"
               subtitle="2024"
@@ -295,6 +301,7 @@ function Home() {
                     title: "League of legends assistant",
                     details: "LoL Gemini Assistant is a comprehensive companion app for League of Legends players, designed to enhance the gaming experience by providing real-time insights, strategy recommendations, and personalized tips. Built with Kotlin Multiplatform, the app offers seamless functionality across Android and iOS devices.",
                     imgPath: league_of_legends_assistant,
+                    ghLink: "https://github.com/allan8araujo/league_of_legends_assistant",
                     timeline: "2024",
                     role: "Personal Project",
                     responsibilities: [
@@ -308,9 +315,91 @@ function Home() {
             />
           </Col>
 
-          <Col md={12} className="project-card mb-4">
+          <Col md={6} className="project-card mb-4">
             <ProjectCard
-              imgPath={crypto_currency_app}
+              hideImage
+              imgPath={null}
+              isBlog={false}
+              title="Movie Catalog"
+              subtitle="2022"
+              description="A native Android app that lists the trending movies of the week and shows details when selecting one, consuming The Movie Database API with Retrofit and loading images with Glide."
+              ghLink="https://github.com/allan8araujo/movieCatalog"
+              toolsUsed={[
+                "Kotlin",
+                "Android",
+                "MVVM",
+                "Retrofit",
+                "Glide",
+                "View Binding",
+                "ViewModel",
+                "Navigation Component",
+                "Lifecycle",
+              ]}
+              onClick={() => {
+                navigate("/project-details", {
+                  state: {
+                    title: "Movie Catalog",
+                    details: "A native Android app built to list the trending movies of the week and display detailed information when selecting one.\n\nConsumed The Movie Database API (api.themoviedb.org) using Retrofit for network calls and Glide for efficient image loading.\n\nImplemented the MVVM (Model-View-ViewModel) design pattern, applying View Binding, ViewModel, Navigation Architecture Component, and Lifecycle components for a clean and maintainable architecture.",
+                    imgPath: null,
+                    ghLink: "https://github.com/allan8araujo/movieCatalog",
+                    timeline: "2022",
+                    role: "Personal Project",
+                    responsibilities: [
+                      "Consume The Movie Database API using Retrofit for real-time trending movie data.",
+                      "Load and cache movie poster images efficiently with Glide.",
+                      "Implement MVVM architecture with ViewModel and Lifecycle components.",
+                      "Use Navigation Architecture Component for fragment-based navigation.",
+                      "Apply View Binding to maintain type-safe interface interactions.",
+                    ],
+                  },
+                });
+              }}
+            />
+          </Col>
+
+          <Col md={6} className="project-card mb-4">
+            <ProjectCard
+              hideImage
+              imgPath={null}
+              isBlog={false}
+              title="High Elo Jobs"
+              subtitle="2021"
+              description="Full-stack web application built with Flask, using HTML, CSS, JavaScript, and jQuery on the front-end and SQLAlchemy as the database ORM on the back-end."
+              ghLink="https://github.com/allan8araujo/site-flask-full-stack"
+              toolsUsed={[
+                "Python",
+                "Flask",
+                "SQLAlchemy",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "jQuery",
+              ]}
+              onClick={() => {
+                navigate("/project-details", {
+                  state: {
+                    title: "High Elo Jobs",
+                    details: "A full-stack web application developed using Flask as the back-end micro framework and SQLAlchemy as the ORM for database management.\n\nThe front-end was built with HTML, CSS, JavaScript, and jQuery, delivering a responsive and interactive user interface.\n\nThe application was deployed and made publicly available on Heroku.",
+                    imgPath: null,
+                    ghLink: "https://github.com/allan8araujo/site-flask-full-stack",
+                    timeline: "2021",
+                    role: "Personal Project",
+                    responsibilities: [
+                      "Develop a full-stack web application using Flask as the back-end micro framework.",
+                      "Manage database models and queries with SQLAlchemy.",
+                      "Build the front-end interface with HTML, CSS, JavaScript, and jQuery.",
+                      "Deploy the application on Heroku.",
+                    ],
+                  },
+                });
+              }}
+            />
+          </Col>
+
+          <Col md={6} className="project-card mb-4">
+            <ProjectCard
+              hideImage
+              imgPath={null}
               isBlog={false}
               title="Crypto Currency App"
               subtitle="2022"

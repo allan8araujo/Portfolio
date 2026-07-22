@@ -1,10 +1,13 @@
 import { useLocation } from "react-router-dom";
 import { Container, Row, Col, Button } from "react-bootstrap"; // Import Button
 import "../style.css"; // Your custom styles
-import { BsGooglePlay } from "react-icons/bs"; // Import a nice icon
+import { BsGooglePlay } from "react-icons/bs";
+import { AiFillGithub } from "react-icons/ai";
 import React, { useState, useEffect } from "react";
 import Footer from "./Footer";
 
+
+import { highlightKeywords } from "../utils/highlightKeywords";
 
 export default function ProjectDetails() {
   const location = useLocation();
@@ -15,9 +18,10 @@ export default function ProjectDetails() {
     client, 
     role, 
     timeline, 
-    responsibilities, 
+    responsibilities,
     playstoreLink,
-    detailsList = []   // NEW
+    ghLink,
+    detailsList = []
   } = location.state || {};
 console.log("detailsList:", detailsList);
 
@@ -97,7 +101,9 @@ console.log("detailsList:", detailsList);
         {/* Details Section */}
         <Row className="project-details-content mb-5">
           <Col>
-            <p>{details}</p>
+            {details && details.split('\n\n').map((paragraph, i) => (
+              <p key={i}>{highlightKeywords(paragraph)}</p>
+            ))}
           </Col>
         </Row>
 
@@ -121,16 +127,23 @@ console.log("detailsList:", detailsList);
             </Col>
           </Row>
         ))}
-        {/* Play Store Button */}
-        <div className="text-center my-4">
-          <a
-            href={playstoreLink}
-            className="btn btn-primary"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View on Play Store
-          </a>
+        <div className="text-center my-4" style={{ display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap' }}>
+          {playstoreLink && (
+            <a href={playstoreLink} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              View on Play Store
+            </a>
+          )}
+          {ghLink && (
+            <a
+              href={ghLink}
+              className="btn btn-dark"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}
+            >
+              <AiFillGithub style={{ fontSize: '1.2rem' }} /> View on GitHub
+            </a>
+          )}
         </div>
       </Container>
     <Footer />
