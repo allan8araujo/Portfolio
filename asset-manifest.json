@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.255bcd17.css",
-    "main.js": "/Portfolio/static/js/main.806573a1.js",
+    "main.css": "/Portfolio/static/css/main.777a927a.css",
+    "main.js": "/Portfolio/static/js/main.3d421493.js",
     "static/js/787.7da95b79.chunk.js": "/Portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/avatar.jpg": "/Portfolio/static/media/avatar.3a96c4e07eb7c6a1a72d.jpg",
     "static/media/empresas_1.png": "/Portfolio/static/media/empresas_1.b98f8315451473a80039.png",
@@ -14,19 +14,20 @@
     "static/media/crypto_currency_app.png": "/Portfolio/static/media/crypto_currency_app.870a056a7395e01be113.png",
     "static/media/allan_furtuoso_resume.pdf": "/Portfolio/static/media/allan_furtuoso_resume.0273701c4e2ce5d011fe.pdf",
     "static/media/empresas_2.png": "/Portfolio/static/media/empresas_2.a1a38728515aeb451ef5.png",
-    "static/media/bradesco_app.png": "/Portfolio/static/media/bradesco_app.379baee07021031769b6.png",
+    "static/media/bradesco_app.png": "/Portfolio/static/media/bradesco_app.4cf11bbec4a8f5bc291d.png",
     "static/media/empresas_3.png": "/Portfolio/static/media/empresas_3.d58b1dba9cb17afef6a7.png",
-    "static/media/empresas_app.png": "/Portfolio/static/media/empresas_app.0a971ef288c825e1a0bc.png",
-    "static/media/emps_app.png": "/Portfolio/static/media/emps_app.dac53be95fab454365e1.png",
+    "static/media/empresas_app.png": "/Portfolio/static/media/empresas_app.f04b50851d04f7bb2491.png",
+    "static/media/emps_app.png": "/Portfolio/static/media/emps_app.7b5504413a5ce1dd64f9.png",
+    "static/media/unique_sistemas_miniatura.png": "/Portfolio/static/media/unique_sistemas_miniatura.7933ba1220aaa8ff0443.png",
     "static/media/bradesco_miniatura.png": "/Portfolio/static/media/bradesco_miniatura.3743e5c5eeae591bf9a9.png",
     "static/media/pre.svg": "/Portfolio/static/media/pre.64cf9c201ea229c16d83.svg",
     "index.html": "/Portfolio/index.html",
-    "main.255bcd17.css.map": "/Portfolio/static/css/main.255bcd17.css.map",
-    "main.806573a1.js.map": "/Portfolio/static/js/main.806573a1.js.map",
+    "main.777a927a.css.map": "/Portfolio/static/css/main.777a927a.css.map",
+    "main.3d421493.js.map": "/Portfolio/static/js/main.3d421493.js.map",
     "787.7da95b79.chunk.js.map": "/Portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.255bcd17.css",
-    "static/js/main.806573a1.js"
+    "static/css/main.777a927a.css",
+    "static/js/main.3d421493.js"
   ]
 }
